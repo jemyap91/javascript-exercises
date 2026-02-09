@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add7(number) {
+            return number + 7
+        }
+
+        console.log(add7(20))
+
+
+        function multiply(a,b) {
+            return a * b
+        }
+
+        let input_a = prompt("Insert first number");
+        let input_b = prompt("Insert second number");
+        console.log(multiply(input_a, input_b));
+
+
+        let capitalised_string = string => {
+            const first_letter = string.charAt(0).toUpperCase();
+            const rest_of_string = string.slice(1).toLowerCase();
+
+            return first_letter + rest_of_string
+        };
+
+        let string_input = prompt("Type anything?");
+        alert(capitalised_string(string_input));
+
+        function last_letter(string) {
+            return string.at(-1)
+        }
+
+        alert(last_letter(string_input));
+    </script>
+</body>
+</html>
