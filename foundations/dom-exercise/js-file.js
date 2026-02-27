@@ -42,3 +42,14 @@ pinkDiv.appendChild(innerP);
 
 // 6. Finally, append the pinkDiv to the main container
 container.appendChild(pinkDiv);
+
+function alertFunction() {
+  alert("YAY! YOU DID IT!");
+}
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", function (e) {
+  console.log(e.target);
+});
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+});
